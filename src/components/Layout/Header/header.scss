@@ -2,21 +2,52 @@
     .navbar-brand {
       img {
         max-width: 170px;
+        @media screen and (max-width: 767px) {
+          max-width: 130px;
+        }
       }
     }
     .navbar-nav {
+      @media screen and (max-width: 767px) {
+        flex-direction: row;
+        justify-content: center;
+      }
       .nav-link {
         padding: 0px;
         font-weight: 400;
         font-size: 16px;
         line-height: 120%;
         color: var(--white-color);
+        @media screen and (max-width: 767px) {
+          font-size: 14px;
+        }
         &:not(:last-child) {
           padding-right: 60px;
+          @media screen and (max-width: 767px) {
+            padding-right: 20px;
+          }
         }
         &.active {
           font-weight: bold;
         }
+      }
+    }
+    .navbar-toggler {
+      background-color: var(--white-color);
+      padding: 5px 10px;
+      .navbar-toggler-icon {
+        width: 20px;
+        height: 20px;
+      }
+      &:focus {
+        box-shadow: none;
+      }
+    }
+    .btn-primary {
+      @media screen and (max-width: 767px) {
+        border-radius: 12px;
+        padding: 12px 15px;
+        font-size: 13px;
       }
     }
 }

@@ -4,20 +4,20 @@ import {
     Navbar,
     Container,
     Nav,
-    NavDropdown,
     Button
 } from "react-bootstrap";
 import Logo from "../../../assets/fanfury-logo.svg";
 import {BsSearch} from "react-icons/bs";
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
     <>
         <Navbar expand="lg">
             <Container>
-                <Navbar.Brand href="#home">
+                <Link to="/">
                     <img src={Logo} alt="logo" className='img-fluid' />
-                </Navbar.Brand>
+                </Link>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ms-auto align-items-center">
