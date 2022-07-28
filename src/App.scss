@@ -1,0 +1,96 @@
+/* Global css starts */
+:root {
+  --primary-color: #A93BFF;
+  --white-color: #ffffff;
+  --white-light-1: #F2F2F2;
+  --white-light-2: #EEEEEE;
+  --yellow-color: #EBF243;
+  --purple-light: #7601F4;
+}
+body {
+  font-family: sans-serif;
+}
+.btn-primary {
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 18px;
+  padding: 16px 24px;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 16px;
+  &:hover {
+    background-color: var(--primary-color);
+  }
+  &:focus {
+    background-color: var(--primary-color);
+   box-shadow: none; 
+  }
+}
+/* Global css ends */
+
+/* Hero styles starts */
+.hero-wrapper {
+  background: url('../src/assets/hero-background.svg') no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+  .hero-image {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    max-width: 50%;
+  }
+  .hero-banner {
+    .hero-row {
+      height: calc(100vh - 80px);
+    }
+    .hero-title {
+      font-weight: 900;
+      font-size: 50px;
+      line-height: 99.5%;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      color: var(--yellow-color);
+      .text-br {
+        display: block;
+      }
+    }
+    .hero-content {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 152%;
+      color: var(--white-light-1);
+    }
+    .hero-btn {
+      margin-top: 30px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-weight: 700;
+      font-size: 13px;
+      line-height: 16px;
+    }
+  }
+  .hero-action-box {
+    background-color: var(--purple-light);
+    padding: 25px;
+    border-radius: 12px;
+    .btn {
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-weight: 700;
+      font-size: 13px;
+      line-height: 16px;
+    }
+    .bar-code-box {
+      background-color: var(--white-light-2);
+      padding: 25px;
+      border-radius: 12px;
+      img {
+        max-height: 200px;
+        margin: 0 auto;
+        display: block;
+      }
+    }
+  }
+}
+/* Hero styles ends */

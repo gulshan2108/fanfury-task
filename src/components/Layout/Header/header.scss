@@ -1,0 +1,22 @@
+.navbar {
+    .navbar-brand {
+      img {
+        max-width: 170px;
+      }
+    }
+    .navbar-nav {
+      .nav-link {
+        padding: 0px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 120%;
+        color: var(--white-color);
+        &:not(:last-child) {
+          padding-right: 60px;
+        }
+        &.active {
+          font-weight: bold;
+        }
+      }
+    }
+}
