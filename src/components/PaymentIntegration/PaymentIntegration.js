@@ -4,7 +4,7 @@ import barCode from "../../assets/barcode.png";
 
 const PaymentIntegration = () => {
   return (
-    <Col sm={5}>
+    <Col lg={5}>
         <div className='hero-content'>
             <div className='hero-action-box payment-box'>
                 <div className='bar-code-box'>
