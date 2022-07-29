@@ -71,11 +71,11 @@ body {
     left: 0;
     bottom: 0;
     max-width: 760px;
-    @media screen and (min-width: 1800px) {
-      min-width: 1000px;
-    }
     @media screen and (min-width: 1600px) {
       min-width: 900px;
+    }
+    @media screen and (min-width: 1800px) {
+      min-width: 1000px;
     }
     @media screen and (max-width: 1300px) {
       max-width: 700px;
@@ -101,7 +101,7 @@ body {
   }
   .hero-banner {
     margin-top: 115px;
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 1400px) {
       margin-top: 0;
     }
     @media screen and (max-width: 991px) {
@@ -109,7 +109,7 @@ body {
       margin-top: 0;
     }
     .hero-row {
-      @media screen and (min-width: 1600px) {
+      @media screen and (min-width: 1400px) {
         align-items: center;
         min-height: calc(100vh - 90px);
       }
