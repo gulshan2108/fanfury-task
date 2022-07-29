@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Col} from 'react-bootstrap';
+import { Col} from 'react-bootstrap';
 import barCode from "../../assets/barcode.png";
 
 const PaymentIntegration = () => {

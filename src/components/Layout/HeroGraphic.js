@@ -8,12 +8,12 @@ const HeroGraphic = (props) => {
   return (
     <div className='hero-wrapper'>
         <Header />
-        <img src={heroGraphic} alt="image" className='hero-image img-fluid' />
+        <img src={heroGraphic} alt="hero-ic" className='hero-image img-fluid' />
         <div className='hero-banner'>
             <Container>
                 <Row className='justify-content-end hero-row'>
                   <Col lg={6} className="banner-responsive-image">
-                    <img src={bannerResponsiveImage} alt="image" className='img-fluid' />
+                    <img src={bannerResponsiveImage} alt="hero_ic" className='img-fluid' />
                   </Col>
                     {props.children}
                 </Row>
