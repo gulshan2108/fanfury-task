@@ -61,7 +61,8 @@ body {
   background-position: bottom center;
   position: relative;
   min-height: 100vh;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767p
+  ) {
     display: flex;
     flex-direction: column;
     height: 100%;

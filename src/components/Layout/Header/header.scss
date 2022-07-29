@@ -25,7 +25,7 @@
     }
   }
   .navbar-nav {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 991px) {
       flex-direction: row;
       justify-content: center;
     }
@@ -43,13 +43,13 @@
       }
       &:not(:last-child) {
         padding-right: 70px;
-        @media screen and (max-width: 767px) {
+        @media screen and (max-width: 991px) {
           padding-right: 20px;
         }
       }
       &.search-link {
         padding-right: 50px;
-        @media screen and (max-width: 767px) {
+        @media screen and (max-width: 991px) {
           padding-right: 20px;
         }
       }
@@ -71,7 +71,7 @@
   }
   .btn-primary {
     letter-spacing: 0.1em;
-    @media screen and (max-width: 767px) {
+    @media screen and (min-width: 991px) {
       border-radius: 12px;
       padding: 12px 15px;
       font-size: 13px;
