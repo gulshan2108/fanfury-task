@@ -1,3 +1,15 @@
+// Sora Font
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap');
+
+// Acumin Font
+@font-face {
+  font-family: 'acumin_pro_condensed_blackRg';
+  src: url('../src/assets/fonts/acumin-pro-condensed-black-webfont.woff2') format('woff2'),
+       url('../src/assets/fonts/acumin-pro-condensed-black-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* Global css starts */
 :root {
   --primary-color: #A93BFF;
@@ -8,7 +20,21 @@
   --purple-light: #7601F4;
 }
 body {
-  font-family: sans-serif;
+  font-family: 'Sora', sans-serif;
+}
+.btn {
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  &:hover {
+    outline: none;
+    box-shadow: none;
+  }
+  &:active:focus {
+    outline: none;
+    box-shadow: none;
+  }
 }
 .btn-primary {
   background-color: var(--primary-color);
@@ -32,8 +58,8 @@ body {
 .hero-wrapper {
   background: url('../src/assets/hero-background.svg') no-repeat;
   background-size: cover;
+  background-position: bottom center;
   position: relative;
-  height: 100vh;
   @media screen and (max-width: 767px) {
     display: flex;
     flex-direction: column;
@@ -45,6 +71,9 @@ body {
     left: 0;
     bottom: 0;
     max-width: 50%;
+    @media screen and (min-width: 1600px) {
+      min-width: 900px;
+    }
     @media screen and (max-width: 767px) {
       max-width: 80%;
       display: block;
@@ -55,7 +84,7 @@ body {
   }
   .hero-banner {
     .hero-row {
-      height: calc(100vh - 80px);
+      height: calc(100vh - 90px);
       @media screen and (max-width: 767px) {
         height: auto;
         padding-top: 50px;
@@ -68,6 +97,11 @@ body {
       text-transform: uppercase;
       margin-bottom: 10px;
       color: var(--yellow-color);
+      font-family: 'acumin_pro_condensed_blackRg';
+      @media screen and (min-width: 1600px) {
+        font-size: 64px;
+        line-height: 99.5%;
+      }
       @media screen and (max-width: 767px) {
         font-size: 30px;
       }
@@ -83,14 +117,20 @@ body {
       font-size: 16px;
       line-height: 152%;
       color: var(--white-light-1);
+      @media screen and (min-width: 1600px) {
+        font-size: 20px;
+        line-height: 152%;
+      }
     }
     .hero-btn {
       margin-top: 30px;
-      text-transform: uppercase;
       letter-spacing: 0.1em;
       font-weight: 700;
       font-size: 13px;
       line-height: 16px;
+      @media screen and (min-width: 1600px) {
+        padding: 16px 36px;
+      }
     }
   }
   .hero-action-box {
@@ -98,20 +138,24 @@ body {
     padding: 25px;
     border-radius: 12px;
     .btn {
-      text-transform: uppercase;
       letter-spacing: 0.1em;
       font-weight: 700;
       font-size: 13px;
       line-height: 16px;
     }
-    .bar-code-box {
-      background-color: var(--white-light-2);
-      padding: 25px;
-      border-radius: 12px;
-      img {
-        max-height: 200px;
-        margin: 0 auto;
-        display: block;
+    &.payment-box {
+      width: 360px;
+      height: 360px;
+      .bar-code-box {
+        background-color: var(--white-light-2);
+        padding: 25px;
+        border-radius: 12px;
+        height: 100%;
+        img {
+          max-height: 100%;
+          margin: 0 auto;
+          display: block;
+        }
       }
     }
   }

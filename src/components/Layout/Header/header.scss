@@ -1,53 +1,76 @@
 .navbar {
-    .navbar-brand {
-      img {
-        max-width: 170px;
-        @media screen and (max-width: 767px) {
-          max-width: 130px;
-        }
-      }
+  padding: 12px 74px;
+  height: 90px;
+  @media screen and (max-width: 767px) {
+    padding: 10px;
+  }
+  .container-fluid {
+    @media screen and (max-width: 400px) {
+      padding: 0;
     }
-    .navbar-nav {
+  }
+  .navbar-brand {
+    img {
+      max-width: 170px;
       @media screen and (max-width: 767px) {
-        flex-direction: row;
-        justify-content: center;
-      }
-      .nav-link {
-        padding: 0px;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 120%;
-        color: var(--white-color);
-        @media screen and (max-width: 767px) {
-          font-size: 14px;
-        }
-        &:not(:last-child) {
-          padding-right: 60px;
-          @media screen and (max-width: 767px) {
-            padding-right: 20px;
-          }
-        }
-        &.active {
-          font-weight: bold;
-        }
+        max-width: 130px;
       }
     }
-    .navbar-toggler {
-      background-color: var(--white-color);
-      padding: 5px 10px;
-      .navbar-toggler-icon {
-        width: 20px;
-        height: 20px;
-      }
-      &:focus {
-        box-shadow: none;
-      }
+  }
+  .navbar-nav {
+    @media screen and (max-width: 767px) {
+      flex-direction: row;
+      justify-content: center;
     }
-    .btn-primary {
+    .nav-link {
+      padding: 0px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 120%;
+      color: var(--white-color);
       @media screen and (max-width: 767px) {
-        border-radius: 12px;
-        padding: 12px 15px;
-        font-size: 13px;
+        font-size: 14px;
+      }
+      @media screen and (max-width: 400px) {
+        font-size: 12px;
+      }
+      &:not(:last-child) {
+        padding-right: 70px;
+        @media screen and (max-width: 767px) {
+          padding-right: 20px;
+        }
+      }
+      &.search-link {
+        padding-right: 50px;
+        @media screen and (max-width: 767px) {
+          padding-right: 20px;
+        }
+      }
+      &.active {
+        font-weight: bold;
       }
     }
+  }
+  .navbar-toggler {
+    background-color: var(--white-color);
+    padding: 5px 10px;
+    .navbar-toggler-icon {
+      width: 20px;
+      height: 20px;
+    }
+    &:focus {
+      box-shadow: none;
+    }
+  }
+  .btn-primary {
+    letter-spacing: 0.1em;
+    @media screen and (max-width: 767px) {
+      border-radius: 12px;
+      padding: 12px 15px;
+      font-size: 13px;
+    }
+    @media screen and (max-width: 400px) {
+      font-size: 12px;
+    }
+  }
 }
