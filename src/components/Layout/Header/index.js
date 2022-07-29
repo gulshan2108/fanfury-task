@@ -15,9 +15,9 @@ import searchIcon from "../../../assets/search_ic.svg";
 const Header = () => {
   return (
     <>
-        <Navbar expand="lg">
+        <Navbar expand="lg" className='desktop-nav'>
             <Container fluid>
-                <Row className='w-100 justify-content-between'>
+                <Row className='w-100 justify-content-between align-items-center'>
                     <Col sm={3} className="col-5">
                         <Link to="/" className="navbar-brand">
                             <img src={Logo} alt="logo" className='img-fluid' />
@@ -39,6 +39,26 @@ const Header = () => {
                         </Navbar.Collapse>
                     </Col>
                 </Row>
+            </Container>
+        </Navbar>
+        <Navbar expand="lg" className='responsive-nav'>
+            <Container fluid>
+                <Link to="/" className="navbar-brand">
+                    <img src={Logo} alt="logo" className='img-fluid' />
+                </Link>
+                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Collapse id="basic-navbar-nav">
+                    <Nav className="ms-auto align-items-center">
+                        <Nav.Link className="active" href="/">Packages</Nav.Link>
+                        <Nav.Link href="/">About Us</Nav.Link>
+                        <Nav.Link className="search-link">
+                            <img src={searchIcon} alt="search_icon" />
+                        </Nav.Link>
+                        <Nav.Link>
+                            <Button className='btn-header'>Play Now</Button>
+                        </Nav.Link>
+                    </Nav>
+                </Navbar.Collapse>
             </Container>
         </Navbar>
     </>

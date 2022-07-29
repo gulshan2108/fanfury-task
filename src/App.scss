@@ -61,8 +61,10 @@ body {
   background-position: bottom center;
   position: relative;
   min-height: 100vh;
-  @media screen and (max-width: 767p
-  ) {
+  @media screen and (max-width: 991px) {
+    min-height: auto;
+  }
+  @media screen and (max-width: 767px) {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -115,7 +117,7 @@ body {
         min-height: calc(100vh - 90px);
       }
       @media screen and (max-width: 991px) {
-        height: calc(100vh - 90px);
+        height: auto;
       }
     }
     .hero-title {

@@ -8,12 +8,14 @@
     padding-right: 0;
     width: 100%;
   }
-  .container-fluid {
-    @media screen and (max-width: 767px) {
-      padding-right: 0;
+  &.desktop-nav {
+    @media screen and (max-width: 991px) {
+      display: none;
     }
-    @media screen and (max-width: 400px) {
-      padding: 0;
+  }
+  &.responsive-nav {
+    @media screen and (min-width: 992px) {
+      display: none;
     }
   }
   .navbar-brand {
